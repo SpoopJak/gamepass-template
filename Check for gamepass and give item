@@ -1,0 +1,7 @@
+local player = game.Players.LocalPlayer
+local ownsGamepass = game:GetService("MarketplaceService"):UserOwnsGamePassAsync(player.UserId,ID FOR PASS)
+
+if ownsGamepass then
+	local tool = game:GetService("ReplicatedStorage"):WaitForChild("tool name"):Clone()
+	tool.Parent = player.Backpack
+end
